@@ -29,9 +29,9 @@ module testbench;
         $dumpvars(0, testbench);
     end
 
-    //  clock-pulse
-    clock #(.tickRate(tickRate)) clockModule(clk);
-
+// Generate the clock signal used by the module under test
+clock #(.tickRate(tickRate)) clockModule(clk);
+    
     //  instantiating module and other parallel statements
     //module name #() uut();
 
